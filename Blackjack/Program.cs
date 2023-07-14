@@ -1,13 +1,13 @@
 ﻿using System;
 
-int coins;
-int cardNumber;
-int totalPlayer;
-int totalCrupier;
-int tries;
+int coins = 0;
+int cardNumber = 0;
+int totalPlayer = 0;
+int totalCrupier = 0;
+int tries = 2;
 string chooseGame = "menu";
-string anotherCard;
-System.Random random = new();
+string anotherCard = "";
+System.Random random = new System.Random();
 
 do
 {
@@ -20,6 +20,7 @@ do
 while (coins > 0)
 {
     totalPlayer = 0;
+    totalCrupier = 0;
     tries = 2;
 
     switch (chooseGame)
